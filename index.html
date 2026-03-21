@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מהמסך למגרש | סדנת AI מעשית למורים לחנ"ג - ai with mosh</title>
+  <meta name="description" content="סדנה מעשית למורים לחנ״ג - גלו איך ליצור תוכניות אימון, אפליקציות מותאמות ותוכן לשיעורים עם AI. 80% תרגול, 0% ז׳רגון.">
+  <meta property="og:title" content="מהמסך למגרש | סדנת AI מעשית למורים לחנ״ג">
+  <meta property="og:description" content="יום שישי 24.4 | 10:00-13:00 | דב הוז 16 ת״א | 390 ש״ח מחיר מוקדם עד 1/4 (במקום 450) | 20 משתתפים בלבד">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:image" content="mosh-hero.jpg">
+  <meta property="og:url" content="https://moshfrenkel.github.io/ai-with-mosh-sadna/">
+  <link rel="icon" type="image/png" href="mosh-character.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GA4 Placeholder: Replace G-XXXXXXXXXX with actual Measurement ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "אני לא טכנולוגי בכלל. בטוח שזה בשבילי?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "בטוח. הסדנה נבנתה בדיוק בשביל מי שמרגיש ככה. לא צריך ידע מוקדם, לא צריך להבין במחשבים, ולא צריך להכיר שום כלי AI. מוש מתחיל מאפס ומלווה אתכם צעד אחרי צעד."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "מה בפועל אני אקבל מהסדנה?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "תצאו עם חומרים מוכנים לשיעורים: תוכנית אימון מותאמת, אפליקציות מותאמות, ותוכן שתוכלו להשתמש בו כבר בשיעור הבא."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "כמה זה עולה?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "המחיר הרגיל הוא 450 ש״ח. עד 1 באפריל יש מחיר רישום מוקדם של 390 ש״ח, חיסכון של 60 ש״ח. סדנה מעשית עם ליווי אישי, כלי AI שתשתמש/י בהם לשנים, חומרים מוכנים שחוסכים שעות הכנה, ויכולת עצמאית ליצור תוכן חדש מתי שתרצה/י."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "כמה זמן הסדנה וצריך להביא משהו?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "הסדנה ביום שישי 24.4, בין 10:00 ל-13:00 בדב הוז 16 תל אביב. תביאו מחשב נייד או טאבלט וביגוד ספורטיבי."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "מה AI בכלל קשור לחינוך גופני?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI יכול לעזור לכם לבנות תוכניות אימון מותאמות לכיתה, ליצור אפליקציות מותאמות לשיעור, להכין תוכן שמדבר לתלמידים בשפה שלהם, ולחסוך שעות של הכנה."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "מה אם אני לא מרוצה?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "יש מדיניות ביטול לפי חוק - 14 ימים מיום ההרשמה."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "מהמסך למגרש - סדנת AI מעשית למורים לחנ״ג",
+    "description": "סדנה מעשית למורים לחנ״ג - גלו איך ליצור תוכניות אימון, אפליקציות מותאמות ותוכן לשיעורים עם AI.",
+    "startDate": "2026-04-24T10:00:00+03:00",
+    "endDate": "2026-04-24T13:00:00+03:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "דב הוז 16, תל אביב",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "דב הוז 16",
+        "addressLocality": "תל אביב",
+        "addressCountry": "IL"
+      }
+    },
+    "organizer": {
+      "@type": "Person",
+      "name": "מוש",
+      "url": "https://wa.me/972523433795"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "390",
+      "highPrice": "450",
+      "priceCurrency": "ILS",
+      "availability": "https://schema.org/LimitedAvailability"
+    },
+    "maximumAttendeeCapacity": 20,
+    "inLanguage": "he"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">דלג לתוכן</a>
+
+  <!-- ============ HERO ============ -->
+  <main id="main">
+  <section class="hero" aria-label="מהמסך למגרש - סדנת AI מעשית">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="hero-bg.jpg" alt="" width="1400" height="600" loading="eager">
+      <div class="hero__bg-overlay"></div>
+    </div>
+    <div class="hero__led-line hero__led-line--top" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge" aria-label="20 מקומות בלבד">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          20 מקומות בלבד
+        </div>
+        <div class="early-bird-badge" aria-label="מחיר מוקדם">
+          <span class="early-bird-badge__dot" aria-hidden="true"></span>
+          390 ש"ח במקום 450 | מחיר מוקדם עד 1 באפריל
+        </div>
+        <p class="countdown" aria-live="polite">נשארו <span class="countdown-days">--</span> ימים למחיר המוקדם</p>
+        <h1 class="hero__title">
+          מהמסך למגרש!
+        </h1>
+        <p class="hero__subtitle">
+          סדנה מעשית למורים לחנ"ג. 80% תרגול, 0% ז'רגון. תצא/י עם כלים שעובדים כבר בשיעור הבא.
+        </p>
+        <a href="#register" class="btn btn--cta hero__cta">אני רוצה להצטרף</a>
+        <p class="hero__micro">לא צריך ידע טכנולוגי מוקדם. בכלל.</p>
+        <div class="hero__details">
+          <div class="hero__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>יום שישי, 24.4.26</span>
+          </div>
+          <div class="hero__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span dir="ltr">10:00–13:00</span>
+          </div>
+          <div class="hero__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>דב הוז 16, תל אביב</span>
+          </div>
+          <div class="hero__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span dir="ltr"><span class="price-original">450</span> <span class="price-current">390 &#8362;</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-frame">
+          <img src="mosh-hero.jpg" alt="מוש פרנקל - מנחה הסדנה, מחייך בחולצה שחורה" width="500" height="625" loading="eager">
+        </div>
+      </div>
+    </div>
+    <div class="hero__led-line hero__led-line--bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ PAIN ============ -->
+  <section class="pain" aria-label="האתגרים שאת/ה מכיר/ה">
+    <div class="container">
+      <h2 class="section-title anim-up">מכיר/ה את התחושה הזו?</h2>
+      <div class="pain__grid">
+        <div class="pain__card anim-up">
+          <div class="studio-icon">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <p>כולם סביבך מדברים על AI, ואת/ה לא בטוח/ה מאיפה מתחילים. <strong>פשוט אף אחד לא הסביר את זה בשפה שלך.</strong></p>
+        </div>
+        <div class="pain__card anim-up">
+          <div class="studio-icon">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <p>שנה אחרי שנה, אותם שיעורים, אותם תרגילים. <strong>ההתלהבות שהייתה פעם? נשחקה קצת.</strong></p>
+        </div>
+        <div class="pain__card anim-up">
+          <div class="studio-icon">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/><path d="M9 6h6"/></svg>
+          </div>
+          <p>התלמידים על הטלפון, ואת/ה תוהה איך לתפוס אותם. <strong>אולי פשוט חסרים כלים חדשים.</strong></p>
+        </div>
+      </div>
+      <p class="pain__bridge anim-up">זה לא את/ה. פשוט אף אחד לא הראה לך איך טכנולוגיה עובדת בשביל מורה לחנ"ג.</p>
+      <div class="pain__cta anim-up">
+        <a href="#register" class="btn btn--cta">אני רוצה ללמוד איך</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION ============ -->
+  <section class="solution" aria-label="מה תקבל/י מהסדנה">
+    <div class="container">
+      <h2 class="section-title anim-up">מה תקבל/י מהסדנה?</h2>
+      <p class="section-sub anim-up">לא רעיונות באוויר. דברים שתוכל/י להשתמש בהם כבר בשיעור הבא.</p>
+      <div class="solution__grid">
+        <div class="solution__card anim-up">
+          <div class="studio-icon studio-icon--teal">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>תוכניות אימון מותאמות</h3>
+          <p>תוכנית אימון שלמה לכיתה שלך. תוך דקות.</p>
+        </div>
+        <div class="solution__card anim-up">
+          <div class="studio-icon studio-icon--teal">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/><path d="M9 6h6"/></svg>
+          </div>
+          <h3>אפליקציות מותאמות</h3>
+          <p>טיימר אימון, מעקב ביצועים, כרטיסי תרגילים. אפליקציות שעובדות, מותאמות בדיוק לשיעור שלך.</p>
+        </div>
+        <div class="solution__card anim-up">
+          <div class="studio-icon studio-icon--teal">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <h3>סרטוני הדגמה</h3>
+          <p>תוכן ויזואלי שמראה לתלמידים בדיוק מה לעשות.</p>
+        </div>
+        <div class="solution__card anim-up">
+          <div class="studio-icon studio-icon--teal">
+            <div class="studio-icon__glow" aria-hidden="true"></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>תוכן שמלהיב תלמידים</h3>
+          <p>חומרים בשפה של הדור הנוכחי.</p>
+        </div>
+      </div>
+      <p class="solution__boost anim-up">מה שתלמדו בסדנה, תוכלו להפעיל כבר בשיעור הבא. <em>מהמסך למגרש</em>.</p>
+    </div>
+  </section>
+
+  <!-- ============ FIT ============ -->
+  <section class="fit" aria-label="למי הסדנה מתאימה">
+    <div class="container">
+      <h2 class="section-title anim-up">הסדנה הזו בשבילך? בוא/י נהיה כנים.</h2>
+      <div class="fit__columns">
+        <div class="fit__col fit__col--yes anim-up">
+          <h3>בשבילך אם:</h3>
+          <ul>
+            <li>
+              <span class="fit__icon fit__icon--check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div><strong>רוצה להתחדש.</strong> יש שיעמום מקצועי ואת/ה מוכן/ה לנסות משהו אחר</div>
+            </li>
+            <li>
+              <span class="fit__icon fit__icon--check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div><strong>מוכן/ה להתנסות.</strong> לא צריך להבין בטכנולוגיה, צריך להיות מוכן/ה לשבת וליצור</div>
+            </li>
+            <li>
+              <span class="fit__icon fit__icon--check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div><strong>רוצה תוצאות מעשיות.</strong> לא עוד הרצאה תיאורטית, אלא כלים שעובדים מחר בבוקר</div>
+            </li>
+            <li>
+              <span class="fit__icon fit__icon--check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div><strong>מלמד/ת חנ״ג.</strong> הסדנה בנויה ספציפית לעולם שלך, עם דוגמאות מהשטח</div>
+            </li>
+          </ul>
+        </div>
+        <div class="fit__col fit__col--no anim-up">
+          <h3>לא בשבילך אם:</h3>
+          <ul>
+            <li>
+              <span class="fit__icon fit__icon--x" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+              <div><strong>מחפש/ת קיצורי דרך.</strong> AI הוא כלי, לא כפתור קסם</div>
+            </li>
+            <li>
+              <span class="fit__icon fit__icon--x" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+              <div><strong>מצפה שה-AI יעשה במקומך.</strong> הסדנה בונה יכולת עצמאית, לא תלות</div>
+            </li>
+            <li>
+              <span class="fit__icon fit__icon--x" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+              <div><strong>לא מוכן/ה להתנסות.</strong> 80% מהסדנה זה תרגול. מי שרוצה רק לשבת ולשמוע, זה לא הפורמט</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="fit__close anim-up">אם קראת את הרשימה הראשונה והרגשת שזה מתאר אותך, כנראה שנתראה בסדנה.</p>
+    </div>
+  </section>
+
+  <!-- ============ STEPS ============ -->
+  <section class="steps" aria-label="איך הסדנה עובדת">
+    <div class="container">
+      <h2 class="section-title anim-up">שלושה שלבים. אפס ז׳רגון.</h2>
+      <div class="steps__grid">
+        <div class="steps__card anim-up">
+          <div class="steps__num" aria-hidden="true">01</div>
+          <h3>מגלים</h3>
+          <p>מכירים את הכלים בעברית פשוטה, בלי מילים מפוצצות. תבין/י מה AI יכול לעשות בשבילך כמורה לחנ״ג.</p>
+        </div>
+        <div class="steps__arrow anim-up" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </div>
+        <div class="steps__card anim-up">
+          <div class="steps__num" aria-hidden="true">02</div>
+          <h3>מתנסים</h3>
+          <p>יוצרים ביחד, בזמן אמת. תוכנית אימון, אפליקציה מותאמת, תוכן ויזואלי. הכל בידיים שלך, עם ליווי צמוד.</p>
+        </div>
+        <div class="steps__arrow anim-up" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </div>
+        <div class="steps__card anim-up">
+          <div class="steps__num" aria-hidden="true">03</div>
+          <h3>יוצאים למגרש</h3>
+          <p>חוזרים הביתה עם חומרים מוכנים לשיעור הבא. תוכנית אימון, אפליקציה, תוכן ויזואלי. הכל מוכן.</p>
+        </div>
+      </div>
+      <div class="steps__info anim-up">
+        <div class="steps__info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>יום שישי, 24.4.26</span>
+        </div>
+        <div class="steps__info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span dir="ltr">10:00–13:00</span>
+        </div>
+        <div class="steps__info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>דב הוז 16, תל אביב</span>
+        </div>
+        <div class="steps__info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          <span>מוגבל ל-20 משתתפים</span>
+        </div>
+        <div class="steps__info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span><span class="price-original">450</span> <span class="price-current">390 ש"ח</span> (מחיר מוקדם)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA MID ============ -->
+  <section class="cta-mid" aria-label="הרשמה">
+    <div class="container">
+      <p class="cta-mid__hook anim-up">תחשב/י על זה: ביום ראשון הבא את/ה נכנס/ת לכיתה עם תוכנית חדשה ואפליקציה שבנית בעצמך. ב-3 שעות.</p>
+      <a href="#register" class="btn btn--cta anim-up">אני רוצה להיות שם</a>
+      <p class="cta-mid__micro anim-up"><span class="price-original">450</span> <span class="price-current">390 ש"ח</span> | מחיר מוקדם עד 1/4 | יום שישי 24.4.26</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" aria-label="על מוש">
+    <div class="container about__inner">
+      <div class="about__image anim-up">
+        <div class="about__image-frame">
+          <img src="mosh-street.jpg" alt="מוש פרנקל, מרצה ומאמן עם ניסיון של 20 שנה" width="400" height="533" loading="lazy">
+        </div>
+      </div>
+      <div class="about__content">
+        <h2 class="section-title anim-up">מי אני?</h2>
+        <p class="anim-up">אני מוש. לא גורו טכנולוגי. קודם כל <strong>איש חינוך גופני</strong>. בעלים של "מושפיט", אימון ילדים מגיל 2 עד 18, מרצה בהכשרות מאמנים. 20+ שנה בשטח. לפני שנתיים גיליתי את עולם ה-AI והבנתי שאפשר לעשות איתו דברים שלא חלמתי עליהם. אז התחלתי לחקור, להתנסות, וגם לטעות. מה שעובד באמת, אני מעביר הלאה.</p>
+        <blockquote class="about__philosophy anim-up">
+          אני בונה יכולת, לא תלות.
+        </blockquote>
+        <div class="about__values">
+          <div class="about__value anim-up">
+            <strong>מכיר את השטח</strong>
+            <span>20+ שנה באימון ילדים. אני מדבר מניסיון, לא מתיאוריה.</span>
+          </div>
+          <div class="about__value anim-up">
+            <strong>בגובה העיניים</strong>
+            <span>אני מלמד בקצב שלך, בשפה שלך, בלי להתנשא.</span>
+          </div>
+          <div class="about__value anim-up">
+            <strong>מעשי עד הסוף</strong>
+            <span>אם אי אפשר להשתמש בזה מחר בשיעור, זה לא נכנס לסדנה שלי.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section class="proof" aria-label="הוכחה חברתית">
+    <div class="container">
+      <h2 class="section-title anim-up">מה אומרים על סדנאות של מוש</h2>
+      <div class="proof__featured anim-up">
+        <blockquote>
+          <svg class="proof__quote-mark" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          <p>הסדנה ממש חשובה לבעלי עסקים. מלא סבלנות וערך.</p>
+          <cite>משתתף בסדנת AI של מוש</cite>
+        </blockquote>
+      </div>
+      <div class="proof__stats">
+        <div class="proof__stat anim-up">
+          <span class="proof__stat-num" data-count="20">20+</span>
+          <span class="proof__stat-label">שנות ניסיון<br>בחינוך גופני</span>
+        </div>
+        <div class="proof__stat anim-up">
+          <span class="proof__stat-num">80%</span>
+          <span class="proof__stat-label">תרגול מעשי<br>בכל סדנה</span>
+        </div>
+        <div class="proof__stat anim-up">
+          <span class="proof__stat-num">0%</span>
+          <span class="proof__stat-label">ז׳רגון<br>טכנולוגי</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" aria-label="שאלות נפוצות">
+    <div class="container">
+      <h2 class="section-title anim-up">שאלות ששואלים לפני שנרשמים</h2>
+      <div class="faq__list">
+        <details class="faq__item anim-up" open>
+          <summary>
+            <span>אני לא טכנולוגי בכלל. בטוח שזה בשבילי?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>בטוח. הסדנה נבנתה בדיוק בשביל מי שמרגיש ככה. לא צריך ידע מוקדם, לא צריך להבין במחשבים, ולא צריך להכיר שום כלי AI. מוש מתחיל מאפס ומלווה אותך צעד אחרי צעד. 80% מהסדנה זה תרגול מעשי, ככה שלא רק מבינים אלא עושים.</p>
+          </div>
+        </details>
+        <details class="faq__item anim-up">
+          <summary>
+            <span>מה בפועל אני אקבל מהסדנה?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>תצא/י עם חומרים מוכנים לשיעורים: תוכנית אימון מותאמת, אפליקציות מותאמות לשיעור, ותוכן שתוכל/י להשתמש בו כבר בשיעור הבא. בנוסף, תדע/י להשתמש בכלי AI בעצמך, בלי לצטרך עזרה מאף אחד.</p>
+          </div>
+        </details>
+        <details class="faq__item anim-up">
+          <summary>
+            <span>כמה זה עולה?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>המחיר הרגיל הוא 450 ש"ח. עד 1 באפריל יש מחיר רישום מוקדם של 390 ש"ח, חיסכון של 60 ש"ח. סדנה מעשית עם ליווי אישי, כלי AI שתשתמש/י בהם לשנים, חומרים מוכנים שחוסכים שעות הכנה, ויכולת עצמאית ליצור תוכן חדש מתי שתרצה/י.</p>
+          </div>
+        </details>
+        <details class="faq__item anim-up">
+          <summary>
+            <span>כמה זמן הסדנה וצריך להביא משהו?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>הסדנה ביום שישי 24.4, בין 10:00 ל-13:00 בדב הוז 16 תל אביב. תביא/י מחשב נייד או טאבלט וביגוד ספורטיבי, כי חלק מהסדנה כולל פעילות פיזית. כן, גם זזים פה, לא רק יושבים מול מסך.</p>
+          </div>
+        </details>
+        <details class="faq__item anim-up">
+          <summary>
+            <span>מה AI בכלל קשור לחינוך גופני?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>שאלה מצוינת, וזה בדיוק מה שהסדנה מראה. AI יכול לעזור לך לבנות תוכניות אימון מותאמות לכיתה, ליצור אפליקציות מותאמות לשיעור, להכין תוכן שמדבר לתלמידים בשפה שלהם, ולחסוך לך שעות של הכנה. AI לא מחליף אותך, הוא נותן לך כלים חדשים.</p>
+          </div>
+        </details>
+        <details class="faq__item anim-up">
+          <summary>
+            <span>מה אם אני לא מרוצה?</span>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>יש מדיניות ביטול לפי חוק, 14 ימים מיום ההרשמה. אם יש לך שאלות נוספות לפני, דבר/י עם מוש ישירות בוואטסאפ. הוא עונה.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTER ============ -->
+  <section class="register" id="register" aria-label="הרשמה לסדנה">
+    <div class="register__bg" aria-hidden="true">
+      <img src="hero-bg.jpg" alt="" width="1400" height="600" loading="lazy">
+      <div class="register__bg-overlay"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-title section-title--light anim-up">את/ה יכול/ה להיות מורה אחר/ת כבר בשבוע הבא</h2>
+      <p class="section-sub section-sub--light anim-up">שלוש שעות, כלים מוכנים, ושיעור חדש כבר ביום ראשון.</p>
+      <div class="early-bird-box anim-up">
+        <div class="early-bird-box__content">
+          <span class="early-bird-box__label">מחיר מוקדם</span>
+          <span class="early-bird-box__price"><span class="price-current">390 ש"ח</span> <span class="price-original">(במקום 450 ש"ח)</span></span>
+          <span class="early-bird-box__save">חיסכון: 60 ש"ח</span>
+        </div>
+        <p class="countdown countdown--register">נשארו <span class="countdown-days">--</span> ימים למחיר המוקדם</p>
+      </div>
+      <form class="register__form anim-up" id="registerForm" novalidate>
+        <div class="register__fields">
+          <div class="form-group">
+            <label for="regName">שם מלא</label>
+            <input type="text" id="regName" name="name" required placeholder="איך קוראים לך?" autocomplete="name">
+            <span class="form-error" role="alert">נשמח לדעת את שמך</span>
+          </div>
+          <div class="form-group">
+            <label for="regPhone">טלפון</label>
+            <input type="tel" id="regPhone" name="phone" required placeholder="05X-XXXXXXX" dir="ltr" autocomplete="tel">
+            <span class="form-error" role="alert">צריך טלפון ליצירת קשר</span>
+          </div>
+          <div class="form-group">
+            <label for="regEmail">אימייל</label>
+            <input type="email" id="regEmail" name="email" placeholder="your@email.com" dir="ltr" autocomplete="email">
+          </div>
+          <div class="form-group form-group--checkbox">
+            <label>
+              <input type="checkbox" name="consent" id="regConsent">
+              <span>אני מסכים/ה לקבל עדכונים מ-ai with mosh. <a href="privacy-policy.html" class="privacy-link" target="_blank" rel="noopener">מדיניות פרטיות</a></span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--cta register__submit">אני נרשם/ת לסדנה</button>
+        <div class="register__meta">
+          <span><span class="price-original">450</span> <span class="price-current">390 ש"ח</span></span>
+          <span class="register__sep" aria-hidden="true">|</span>
+          <span>יום שישי 24.4.26</span>
+          <span class="register__sep" aria-hidden="true">|</span>
+          <span>דב הוז 16, ת״א</span>
+          <span class="register__sep" aria-hidden="true">|</span>
+          <span>מוגבל ל-20 משתתפים</span>
+        </div>
+        <p class="register__cancel">ביטול עד 14 יום מההרשמה, לפי חוק.</p>
+      </form>
+      <div class="register__wa anim-up">
+        <p>רוצים לשאול משהו לפני?</p>
+        <a href="https://wa.me/972523433795?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%95%D7%A9%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%93%D7%A0%D7%94%20%27%D7%9E%D7%94%D7%9E%D7%A1%D7%9A%20%D7%9C%D7%9E%D7%92%D7%A8%D7%A9%27%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94" class="btn btn--wa" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.503 3.935 1.386 5.612L0 24l6.573-1.324A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.88 0-3.67-.467-5.23-1.29l-.375-.222-3.89.783.82-3.777-.244-.388A9.776 9.776 0 0 1 2.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+          דבר/י עם מוש בוואטסאפ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__led" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">ai with mosh</span>
+        <span class="footer__tagline">להפוך טכנולוגיה ליכולת אישית</span>
+      </div>
+      <div class="footer__contact">
+        <a href="tel:0523433795" dir="ltr">052-343-3795</a>
+        <a href="mailto:mfrenkel5@gmail.com" dir="ltr">mfrenkel5@gmail.com</a>
+        <a href="https://wa.me/972523433795" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="footer__legal" id="privacy">
+        <a href="privacy-policy.html">מדיניות פרטיות</a>
+        <a href="terms.html">תנאי שימוש</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 ai with mosh. כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOAT ============ -->
+  <a href="https://wa.me/972523433795?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%95%D7%A9%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%93%D7%A0%D7%94%20%27%D7%9E%D7%94%D7%9E%D7%A1%D7%9A%20%D7%9C%D7%9E%D7%92%D7%A8%D7%A9%27%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94" class="wa-float" target="_blank" rel="noopener" aria-label="שלחו הודעה בוואטסאפ">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.503 3.935 1.386 5.612L0 24l6.573-1.324A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.88 0-3.67-.467-5.23-1.29l-.375-.222-3.89.783.82-3.777-.244-.388A9.776 9.776 0 0 1 2.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+  </a>
+
+  <!-- ============ STICKY CTA (mobile) ============ -->
+  <div class="sticky-cta" id="stickyCta" role="complementary" aria-label="כפתור הרשמה מהירה">
+    <a href="#register" class="btn btn--cta sticky-cta__btn">אני נרשם/ת | 390 ש"ח</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
